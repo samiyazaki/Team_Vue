@@ -96,7 +96,7 @@ async function addEmployee() {
       type: "input",
       name: "role_id",
       message:
-        "Which department is the employee in? 1 for Branch, 2 for Operations and 3 for Outside sales.",
+        "What is the role for this employee? 1 for Manager, 2 for office, 3 for warehouse.",
     },
     {
       type: "input",
