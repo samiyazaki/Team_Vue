@@ -3,7 +3,7 @@ const mysql = require("mysql2"); // Setting up mysql2
 const inquirer = require("inquirer"); // Setting up inquirer for prompts
 const express = require("express"); // Setting up node
 const util = require("util"); // Util package
-const sequelize = require("./config/connection"); // I tried to use sequelize in this instance but it doesn't fully function
+// const sequelize = require("./config/connection"); // I tried to use sequelize in this instance but it doesn't fully function
 
 const app = express();
 
@@ -75,10 +75,15 @@ async function openApp() {
 }
 async function selectEmployees() {
   // async function for viewing employees
-  const employee = await db.query("SELECT * FROM employee"); // Selcets all employees from database
+  const employee = await db.query(`
+    SELECT employee.*, role.title, role.salary
+    FROM employee
+    JOIN role ON employee.role_id = role.id
+  `);
   console.table(employee);
   openApp();
 }
+
 async function addEmployee() {
   // async function for adding employees
   let answer = await inquirer.prompt([
