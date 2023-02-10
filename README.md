@@ -6,7 +6,11 @@
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=samiyazaki" alt="samiyazaki" /></a> </p>
 
 - 🔭 I'm currently working on [Team_Vue](https://github.com/samiyazaki/Team_Vue)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0RC2ryYPKk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/0RC2ryYPKk4/0.jpg)](http://www.youtube.com/watch?v=0RC2ryYPKk4 "Video Title")
+
+## This is a program that utilizes a Command Line Interface to allow the user to manage their employee database through MySQL and Inquirer. The program is fairly lightweight and has a fairly simple workflow. The data is stored in SQL allowing the user to create tables of data for the employees based on specific criteria and then displayed with the Console Table NPM to increase ease of use.
+
+## The user initializes the program with NPM Start and from there can select from the menu options to begin. The user can View Employees, Departments and Roles, Add Employees, Departments and Roles as well as Update the role of any employee in the database.
 
 - 🌱 I'm currently learning **javaScript, node, inquirer, markdown, SQL and Express**
 
